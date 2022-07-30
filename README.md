@@ -21,7 +21,7 @@ Just wrap the WidgetRebirth widget to your MaterialApp or CupertinoApp and use t
 
 ## Usage
 
-To use this plugin, add rebirth: ^[<latest version>] as a dependency in your [pubspec.yaml] (https://dart.dev/tools/pub/pubspec)file
+To use this plugin, add rebirth: ^<latest version> as a dependency in your [pubspec.yaml] (https://dart.dev/tools/pub/pubspec)file
 
 
 ```dart
