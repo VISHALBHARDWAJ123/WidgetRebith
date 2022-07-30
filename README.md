@@ -44,4 +44,5 @@ void restart(){
 }
 
 ```
-
+## Example
+`/example/lib/main.dart`
