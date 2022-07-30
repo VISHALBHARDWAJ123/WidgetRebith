@@ -21,7 +21,7 @@ Just wrap the WidgetRebirth widget to your MaterialApp or CupertinoApp and use t
 
 ## Usage
 
-To use this plugin, add rebirth: ^<latest version> as a dependency in your pubspec.yaml file
+To use this plugin, add rebirth: ^[<latest version>] as a dependency in your [pubspec.yaml] file
 
 
 ```dart
@@ -30,8 +30,8 @@ void main() => runApp(
     home: Material(
       child: Center(
         child: ElevatedButton(
-          onPressed: _launchUrl,
-          child: Text('Show Flutter homepage'),),
+          onPressed:()=> restart(),
+          child: Text('WidgetRebirth'),),
       ),
     ),
   ),
