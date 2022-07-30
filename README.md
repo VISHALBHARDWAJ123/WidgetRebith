@@ -15,9 +15,26 @@ and the Flutter guide for
 ## Features
 
 A Flutter Package for give a rebirth of your app
+
+## Installation
+
+### Dependency
+Add the package as a dependency in your pubspec.yaml file.
+```yaml
+dependencies:
+  rebirth: "^lastest_version"
+```
+
+### Import
+Import the package in your code file.
+```dart
+import 'package:rebirth/rebirth.dart';
+```
 ## Getting started
 
 Just wrap the WidgetRebirth widget to your MaterialApp or CupertinoApp and use the method WidgetRebirth.createRebirth for magic
+
+
 
 ## Usage
 
@@ -25,24 +42,39 @@ To use this plugin, add rebirth: ^<latest version> as a dependency in your [pubs
 
 
 ```dart
-void main() => runApp(
-  const WidgetRebirth(child:MaterialApp(
-    home: Material(
-      child: Center(
-        child: ElevatedButton(
-          onPressed:()=> restart(),
-          child: Text('WidgetRebirth'),),
+void main() {
+  runApp(const WidgetRebirth(materialApp: MyApp()));
+}
+
+class Screen1 extends StatelessWidget {
+  const Screen1({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Screen 1'),
       ),
-    ),
-  ),
-  ),
-);
-void restart(){
-  if(mounted) {
+      body: Center(
+        child: TextButton(
+          onPressed: () => restartApp(context: context),
+          child: const Text("Restart your app"),
+        ),
+      ),
+    );
+  }
+
+  void restartApp({required BuildContext context}) {
     WidgetRebirth.createRebirth(context: context);
   }
 }
 
 ```
-## Example
-`/example/lib/main.dart`
+# Flutter 2.0 and null-safety
+
+From 1.0.0 and onwards, Flutter Rebirth is null-safe and requires Dart SDK 2.12.0 minimum.
+
+## License
+
+Flutter Rebirth is released under the [MIT License](LICENSE)
+
