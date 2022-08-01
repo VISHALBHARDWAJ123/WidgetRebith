@@ -95,6 +95,12 @@ class SplashScreen extends StatefulWidget {
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
+class SplashScreenDummy extends StatefulWidget {
+  const SplashScreenDummy({Key? key}) : super(key: key);
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
