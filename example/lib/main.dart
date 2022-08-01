@@ -102,7 +102,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     Future.delayed(
       const Duration(seconds: 3),
-          () => Navigator.push(
+      () => Navigator.push(
         context,
         CupertinoPageRoute(
           builder: (context) => const MyHomePage(
